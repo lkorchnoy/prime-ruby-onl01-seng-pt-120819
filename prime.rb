@@ -1,4 +1,13 @@
 # Add  code here!
+def prime?(number)
+  return false if number <= 1
+  numbers = (2...number).to_a
+  numbers.all? do |num|
+  number%num != 0
+ end
+end
+
+
 def prime(n)
   Prime.prime?(n)
   "include {:focus=>true}"
